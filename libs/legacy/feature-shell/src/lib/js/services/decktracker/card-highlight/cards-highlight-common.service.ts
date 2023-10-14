@@ -1226,6 +1226,8 @@ export abstract class CardsHighlightCommonService extends AbstractSubscriptionCo
 				return and(side(inputSide), inDeck, beast);
 			case CardIds.ScrollSavvy:
 				return and(side(inputSide), inDeck, spell);
+			case CardIds.SeadevilStinger:
+				return and(side(inputSide), race(Race.MURLOC), or(inDeck, inHand));
 			case CardIds.SeafloorGateway_TSC_055:
 				return and(side(inputSide), inDeck, minion, mech);
 			case CardIds.SecurityAutomaton_TSC_928:
@@ -1414,6 +1416,8 @@ export abstract class CardsHighlightCommonService extends AbstractSubscriptionCo
 				return and(side(inputSide), inDeck, spell);
 			case CardIds.TopiorTheShrubbagazzor:
 				return and(side(inputSide), or(inDeck, inHand), spell, nature);
+			case CardIds.Toxfin_DAL_077:
+				return and(side(inputSide), race(Race.MURLOC), or(inDeck, inHand));
 			case CardIds.TerrorscaleStalker:
 				return and(side(inputSide), or(inDeck, inHand), minion, deathrattle);
 			case CardIds.TessGreymane_GIL_598:
